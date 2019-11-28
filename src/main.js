@@ -5,6 +5,15 @@ import store from "./store";
 
 Vue.config.productionTip = false;
 
+import "@/assets/css/reset.css";
+import "@/assets/js/rem.js";
+
+// vant完全引入
+import Vant from "vant";
+import "vant/lib/index.css";
+
+Vue.use(Vant);
+
 new Vue({
   router,
   store,
