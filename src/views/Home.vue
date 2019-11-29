@@ -27,6 +27,7 @@
           <div class="hot-swiper-content">
             <img :src="item.img" alt />
             <div>{{ item.name }}</div>
+            <div>{{ item.desc }}</div>
             <div>￥{{ item.price }}</div>
           </div>
         </swiper-slide>
@@ -65,27 +66,32 @@ export default {
         {
           name: "花牛苹果",
           img: require("../assets/images/img-apple.png"),
+          desc: '红六福 甘肃花牛苹果 12个装 新鲜',
           price: "29.90"
         },
         {
           name: "琯溪蜜柚",
           img: require("../assets/images/img-pomelo.png"),
+          desc: '精选特级红柚4粒装 新鲜水果礼盒装',
           price: "58.80"
         },
         {
           name: "车厘子",
           img: require("../assets/images/img-cherry.png"),
+          desc: '【顺丰 坏果包赔】进口车厘子 JJ级',
           price: "129.00"
         },
         {
           name: "柑橘",
           img: require("../assets/images/img-citrus.png"),
+          desc: '爱媛38号果冻橙柑橘 2.5kg装',
           price: "59.90"
         },
         {
           name: "草莓",
           img: require("../assets/images/img-strawberry.png"),
-          price: "76.80"
+          desc: '现摘丹东99奶油草莓 红颜草莓3斤',
+          price: "128.80"
         }
       ],
       swiperOption: {
